@@ -45,4 +45,4 @@ define( 'SAVEQUERIES', true  );
 * the ability to install or update plugins or themes.
 */
 define( 'DISALLOW_FILE_EDIT', true );
-define( 'DISALLOW_FILE_MODS', true );
+define( 'DISALLOW_FILE_MODS', false );
