@@ -1,6 +1,6 @@
 .DS_Store
 .idea
-wp-content/plugins
-wp-content/uploads
-wp-config.php
-wp-content/themes/cmstheme
+web/wp-content/plugins
+web/wp-content/uploads
+web/wp-config.php
+web/wp-content/themes/cmstheme
