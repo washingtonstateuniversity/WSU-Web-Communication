@@ -13,7 +13,11 @@ Plugins that should be installed along with `web.wsu.edu`:
 
 ## Themes
 
-The current WSU News theme is a child theme of TwentyThirteen.
+Themes that should be installed along with `web.wsu.edu`:
+
+* TwentyThirteen
+* WSUWP Spine Parent
+* Interim child theme (?)
 
 ## Local Development
 
