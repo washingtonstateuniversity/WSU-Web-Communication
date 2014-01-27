@@ -5,6 +5,8 @@
 
 # Refer to README.md for a list of plugins to install
 web/wp-content/plugins
+!web/wp-content/plugins/index.php
+!web/wp-content/plugins/hello.php
 
 # All user generated content should be ignored.
 web/wp-content/uploads
