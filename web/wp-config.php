@@ -17,6 +17,8 @@ define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', ''     );
 define( 'WPLANG',     ''     );
 
+define('WP_DEFAULT_THEME', 'twentytwelve');
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) )
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
