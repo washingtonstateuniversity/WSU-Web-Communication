@@ -3,20 +3,6 @@
 .idea
 *.sublime*
 
-# Refer to README.md for a list of plugins to install
-web/wp-content/plugins
-!web/wp-content/plugins/index.php
-!web/wp-content/plugins/hello.php
-
-# All user generated content should be ignored.
-web/wp-content/uploads
-
-# Production config should be ignored.
-web/prod-config.php
-
-# TwentyThirteen and TwentyTwelve are kept as part of the repository as
-# they are most likely to be used as a parent. Over time, we can ignore
-# those as well.
-web/wp-content/themes/cmstheme
-web/wp-content/themes/wsuwp-spine-parent
-web/wp-content/themes/twentyfourteen
+wordpress
+wp-content/uploads
+wp-config.php
