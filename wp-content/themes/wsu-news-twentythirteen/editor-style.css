@@ -1,0 +1,627 @@
+/*
+Theme Name: Twenty Thirteen
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Headings
+ * 3.0 - Text Elements
+ * 4.0 - Links
+ * 5.0 - Alignment
+ * 6.0 - Tables
+ * 7.0 - Images
+ * 8.0 - Post Formats
+ * 9.0 - RTL
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * 1.0 Body
+ * ----------------------------------------------------------------------------
+ */
+
+html .mceContentBody {
+	font-size: 0.75em;
+	max-width: 495px;
+	padding-left: 22px;
+	padding-top: 20px;
+	background-color: #fff;
+}
+
+body {
+	color: #262a2d;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	line-height: 1.5;
+	text-align: left;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+/**
+ * 2.0 Headings
+ * ----------------------------------------------------------------------------
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0 0 6px;
+	letter-spacing: 0;
+	font-weight: normal;
+	clear: both;
+}
+
+h4,
+h5,
+h6 {
+	padding: 0 0 5px;
+}
+
+h2,
+h4,
+h5 {
+	color: #981e32;
+}
+
+h1,
+h3 {
+	color: #5e6a71;
+}
+
+h1 {
+	font-size: 2.2em;
+	line-height: 1.2em;
+	letter-spacing: -0.02em;
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+h6 {
+	font-weight: normal;
+	font-size: .8em;
+	line-height: 1.7em;
+	color: #262a2d;
+}
+
+hr {
+	background: url(../images/dotted-line.png) repeat center top;
+	background-size: 4px 4px;
+	border: 0;
+	height: 1px;
+	margin: 0 0 24px;
+}
+
+/**
+ * 3.0 Text Elements
+ * ----------------------------------------------------------------------------
+ */
+
+p {
+	margin: 0;
+	padding-bottom: 12px;
+	line-height: 1.6em;
+}
+
+ol,
+ul {
+	line-height: 1.6em;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+ul {
+	list-style-type: square;
+	margin-left: 15px;
+	padding: 0 0 0 20px;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+li {
+	margin: 5px 0 5px 0;
+	padding: 0;
+}
+
+li > ul,
+li > ol {
+	margin: 0;
+}
+
+ol h1,
+ol h2,
+ol h3,
+ol h4,
+ol h5,
+ol h6,
+ul h1,
+ul h2,
+ul h3,
+ul h4,
+ul h5,
+ul h6 {
+	padding-bottom: 0;
+}
+
+dl {
+	margin: 0 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 20px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 14px;
+}
+
+pre {
+	background: #f5f5f5;
+	color: #666;
+	font-family: monospace;
+	font-size: 14px;
+	margin: 20px 0;
+	overflow: auto;
+	padding: 20px;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+blockquote {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 24px 40px;
+}
+
+blockquote blockquote {
+	margin-right: 0;
+}
+
+blockquote cite,
+blockquote small {
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+cite {
+	border-bottom: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+address {
+	font-style: italic;
+	margin: 0 0 24px;
+}
+
+del {
+	color: #333;
+}
+
+ins {
+	background: #fff9c0;
+	border: none;
+	color: #333;
+	text-decoration: none;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/**
+ * 4.0 Links
+ * ----------------------------------------------------------------------------
+ */
+
+a {
+	color: #003c69;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #5e6a71;
+	text-decoration: underline;
+}
+
+a:active,
+a:hover {
+	color: #c60c30;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+/**
+ * 5.0 Alignment
+ * ----------------------------------------------------------------------------
+ */
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 5px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 5px 20px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+
+/**
+ * 6.0 Tables
+ * ----------------------------------------------------------------------------
+ */
+
+table {
+	border-bottom: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 2;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+caption {
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+}
+
+/**
+ * 7.0 Images
+ * ----------------------------------------------------------------------------
+ */
+img {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.wp-caption {
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+.wp-caption-dt {
+	margin: 0;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	color: #5e6a71;
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	padding-top: 12px;
+}
+
+.mceTemp + ul,
+.mceTemp + ol  {
+	list-style-position: inside;
+}
+
+
+/**
+ * 8.0 Post Formats
+ * ----------------------------------------------------------------------------
+ */
+
+/* Aside */
+.post-format-aside {
+	background-color: #f7f5e7;
+}
+
+.post-format-aside blockquote {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.post-format-aside cite {
+	font-size: 100%;
+	text-transform: none;
+}
+
+.post-format-aside cite:before {
+	content: "\2014";
+	margin-right: 5px;
+}
+
+/* Audio */
+.post-format-audio {
+	background-color: #db572f;
+}
+
+.post-format-audio a {
+	color: #fbfaf3;
+}
+
+.post-format-audio:before {
+	background: url(../images/dotted-line.png) repeat-y 85px 0;
+	background-size: 4px 4px;
+	content: "\f109";
+	display: block;
+	float: left;
+	font-family: Genericons;
+	font-size: 64px;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	line-height: 1;
+	width: 120px;
+}
+
+/* Chat */
+.post-format-chat {
+	background-color: #eadaa6;
+}
+
+.post-format-chat a {
+	color: #722d19;
+}
+
+/* Gallery */
+.post-format-gallery {
+	background-color: #fbca3c;
+}
+
+.post-format-gallery a {
+	color: #722d19;
+}
+
+/* Image: same as Standard/Defaults */
+
+/* Link */
+.post-format-link {
+	background-color: #f7f5e7;
+}
+
+/* Quote */
+.post-format-quote {
+	background-color: #210d10;
+	color: #f7f5e7;
+}
+
+.post-format-quote a {
+	color: #e63f2a;
+}
+
+.post-format-quote blockquote {
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0;
+	padding-left: 75px;
+	position: relative;
+}
+
+.post-format-quote blockquote:before {
+	content: '\201C';
+	font-size: 140px;
+	font-weight: 400;
+	line-height: .8;
+	padding-right: 25px;
+	position: absolute;
+	left: -15px;
+	top: -3px;
+}
+
+.post-format-quote blockquote small,
+.post-format-quote blockquote cite {
+	display: block;
+	font-size: 16px;
+}
+
+.format-quote .entry-content cite a {
+	border-bottom: 1px dotted #fff;
+	color: #fff;
+}
+
+.format-quote .entry-content cite a:hover {
+	text-decoration: none;
+}
+
+
+/* Status */
+.post-format-status {
+	background-color: #722d19;
+	color: #f7f5e7;
+	font-style: italic;
+	font-weight: 300;
+	padding: 0;
+	padding-left: 35px;
+}
+
+.post-format-status.mceContentBody {
+	font-size: 24px;
+}
+
+.post-format-status:before {
+	background: url(../images/dotted-line.png) repeat-y left bottom;
+	background-size: 4px 4px;
+	content: "";
+	display: block;
+	float: left;
+	height: 100%;
+	position: relative;
+	left: -30px;
+	width: 1px;
+}
+
+.post-format-status > p:first-child:before {
+	background-color: rgba(0, 0, 0, 0.65);
+	content: "";
+	height: 3px;
+	width: 13px;
+	margin-top: 13px;
+	position: absolute;
+	left: 9px;
+}
+
+.post-format-status a {
+	color: #eadaa6;
+}
+
+/* Video */
+.post-format-video {
+	background-color: #db572f;
+}
+
+.post-format-video a {
+	color: #fbfaf3;
+}
+
+
+/**
+ * 9.0 RTL
+ * ----------------------------------------------------------------------------
+ */
+
+html .mceContentBody.rtl {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.rtl ol,
+.rtl ul {
+	padding: 0 40px 0 0;
+}
+
+.rtl .wp-caption,
+.rtl tr th {
+	text-align: right;
+}
+
+.rtl td {
+	padding: 6px 0 6px 10px;
+	text-align: right;
+}
+
+.rtl blockquote blockquote {
+	margin-left: 0;
+	margin-right: 24px;
+}
+
+.rtl.post-format-audio:before,
+.rtl.post-format-status:before,
+.rtl.post-format-status > p:first-child:before {
+	background: none;
+	content: none;
+}

@@ -1,0 +1,259 @@
+/*
+ Theme Name:     WSU News Theme
+ Theme URI:      http://news.wsu.edu
+ Description:    Child theme of TwentyThirteen for WSU News.
+ Template:       twentythirteen
+ Version:        1.0.2
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* in order for the current WSU theme to display correctly */
+* {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* fonts */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: inherit;
+}
+
+/* ID is required to avoid override by default WSU styles */
+#content h2 {
+	font-size: 1.2em;
+}
+
+/* buttons */
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+	background: #c60c30;
+	border-bottom: 3px solid #981e32;
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover{
+	background: #981e32;
+	border-bottom: 3px solid #c60c30;
+}
+
+/* link color changes */
+a:active, a:hover{
+	color: #c60c30;
+}
+.entry-title a{
+	color:#262a2d;
+}
+.entry-title a:hover{
+	text-decoration: none;
+	color: #c60c30;
+}
+.entry-meta a, .entry-content a, .comment-content a, .navigation a{
+	color: #981e32;
+}
+.entry-meta a:hover, .entry-content a:hover, .comment-content a:hover,.navigation a:hover{
+	color: #c60c30;
+}
+
+
+/* global nav search box adjustments */
+input{
+	padding: inherit;
+}
+input:focus, textarea:focus{
+	border: 1px solid #5e6a71;
+}
+textarea{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+button, input, textarea{
+	border: 1px solid #e7e9ea;
+}
+#searchbuttonimg{
+	padding-top:0;
+}
+
+
+/* inherit WSU nav styles */
+.nav-menu li{
+	display:block;
+}
+.nav-menu li a{
+	font-size: inherit;
+	line-height: inherit;
+	padding: inherit;
+}
+.nav-menu li:hover > a, .nav-menu li a:hover{
+	background: none;
+}
+
+#nav .nav-menu .current_page_item > a, #nav .nav-menu .current_page_ancestor > a, #nav .nav-menu .current-menu-item > a, #nav .nav-menu .current-menu-ancestor > a{
+	font-style: normal;
+	color: #981e32;
+}
+
+/* ----------------------- */
+/* content area adjustments */
+
+#content h1.entry-title{
+	font-family: 'Open Sans Condensed', "Lucida Grande","Lucida Sans Unicode",Arial,san-serif;
+	font-weight: 700;
+	font-size: 1.75em;
+}
+.entry-header{
+	margin-bottom: 15px;
+}
+.hentry{
+	border-top: 1px solid #981e32;
+}
+.hentry:first-child{
+	padding-top: 0;
+	border-top: none;
+}
+
+.entry-content img.alignleft, .entry-content .wp-caption.alignleft{
+	margin-left: 0;
+}
+.entry-content img.alignright, .entry-content .wp-caption.alignright{
+	margin-right: 0;
+}
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption{
+	color: #5e6a71;
+	font-size: 0.9em;
+
+	padding-top: 12px;
+}
+.entry-meta{
+	font-size: 1em;
+}
+.more-link{ /*block the element*/
+	display: block;
+	text-align: right;
+	margin-top: 10px;
+}
+.post-navigation{
+	font-size: 1em;
+	font-style: normal;
+}
+.post-navigation h1{
+	display: none;
+}
+.post-navigation a{
+	padding-bottom: 10px;
+}
+.paging-navigation{
+	background: none;
+	padding: 0;
+}
+.paging-navigation .meta-nav, .paging-navigation a:hover .meta-nav, .paging-navigation .nav-previous .meta-nav{
+	background: none;
+	width: auto;
+	color: inherit;
+}
+.paging-navigation .nav-links{
+
+}
+.nav-links{
+	padding: 0;
+}
+.nav-links a:first-child{
+	float: left;
+}
+.comments-area{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #5e6a71;
+}
+
+.comment-respond{ /* comments */
+	background: none;
+	border-top: 1px solid #5e6a71;
+}
+
+.comment-author .avatar{
+	display: none;
+}
+
+#comments input{
+	padding: 3px;
+}
+/* archive header also for category and tag head */
+.archive-header, .page-header{
+	background: none;
+	padding: 0;
+}
+.archive-title, .archive-meta, .page-title{
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 1.25em;
+}
+
+/* -------------------- */
+/* WSU Styles overrides */
+
+#siteID{
+	background: #981e32;
+	box-shadow: inset 0 0 150px #262b2d;
+	box-shadow: inset 0 0 150px rgba(0,0,0,.5);
+}
+#wrapper #content #secondary{
+	background: none;
+}
+
+#main input, #secondary input{
+	padding: 2px;
+}
+
+/* author removal and other meta related items*/
+.author{
+	display: none;
+}
+.sticky.format-standard .entry-meta .date{
+	display: inherit;
+}
+
+/* 404 page */
+.error404 .page-wrapper {
+	background: none;
+}
+
+#siteID h1 {
+	padding-top: 37px;
+}
+
+.wsu_widget_calendar {
+	background: none;
+}
+
+.wsu_widget_calendar td {
+	padding: 2px;
+}
+
+.wsu_widget_calendar caption {
+	text-align: center;
+}
+
+.sidebar .post-navigation .nav-links,
+.sidebar .entry-header,
+.sidebar .entry-content,
+.sidebar .entry-summary,
+.sidebar .entry-meta {
+	padding: 0;
+}
+
+/* Basic styling for widgets on the right side */
+#content #secondary .widget {
+	width: 100%;
+	background: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+#secondary .addthis_toolbox {
+	float: left;
+	width: 80px;
+	margin-top: 15px;
+}
