@@ -1,5 +1,3 @@
 <?php
 
 // shhh...
-
-echo 'test';
