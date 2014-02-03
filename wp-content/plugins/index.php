@@ -1,3 +1,4 @@
 <?php
 
 // shhh...
+echo 'test';
