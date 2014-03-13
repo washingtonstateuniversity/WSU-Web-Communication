@@ -1,0 +1,7 @@
+.git
+wordpress
+wp-config
+wp-content/plugins/wsuwp-sso-authentication
+wp-content/plugins/wsuwp-plugin-custom-css
+wp-content/themes/spine
+wp-content/uploads
