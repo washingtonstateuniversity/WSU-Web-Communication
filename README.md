@@ -10,6 +10,7 @@ Plugins that should be installed along with `web.wsu.edu`:
 
 * Admin Color Schemes
 * WSUWP SSO Authentication
+* WSU Custom CSS
 
 ## Themes
 
